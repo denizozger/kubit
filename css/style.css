@@ -1,0 +1,76 @@
+.main-container {
+	font-family: "Arial";
+	position: relative;
+}
+
+.hours-of-day-container {
+	height: 720px;
+	left: 0px;
+	position: absolute;
+	width: 75px;
+}
+
+.hour-of-day {
+	height: 60px;
+	padding-right: 5px;
+	text-align: right;
+}
+
+.hour-of-day .start {
+	display:inline-block;
+}
+
+.hour-of-day .period,
+.hour-of-day .half {
+	color: #bdc3c7;
+	display:inline-block;
+	font-size: xx-small;
+	margin-top: 10px;
+}
+
+.calendar-container {
+	border: 1px solid #bdc3c7;
+	height: 720px;
+	left: 75px;
+	position: absolute;
+	width: 600px;
+}
+
+.one-hour {
+	display: flex;
+	border-color: #bdc3c7;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	height: 60px;
+	width: 100%;
+}
+
+.event {
+	background-color: #ecf0f1;
+	border-left: 5px solid #2ecc71;
+	margin-left: 10px;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+}
+
+.one-hour .event:last-child {
+    margin-right: 10px;
+}
+
+.event .details {
+	margin: 8px 12px;
+}
+
+.event .details span {
+	display: inherit;
+}
+
+.event .details .title {
+	color: #2ecc71;
+}
+
+.event .details .location {
+	color: #95a5a6;
+	font-size: 0.8em;
+}
